@@ -11,8 +11,8 @@
     <body>
         <section class ="header">
             <div class="container">
-                <button type="button"  class="contact-btn" >Contact</button>
-                <button type="button" class="about-btn">About</button>
+                <a href="#contact"><button type="button"  class="contact-btn" >Contact</button></a>
+                <a href="#about"><button type="button" class="about-btn">About</button></a>
                 <button type="button" class="home-btn">Home</button>
             </div>
             <div class="home">
@@ -21,11 +21,12 @@
                 <h5>Computer Engineer</h5>
                 <p>Frontend Website Designer<br>
                    UI/UX Designer | Graphics Designer</p>
-                <button type="button" class="my-btn">Contact Me</button>
+                   <a href="#contact"><button type="button" class="my-btn">Contact Me</button></a>
             </div>
         </section>
         <img src="img/Ponnparamaguru.png" class="feature-img">
         <section  class="footer">
+            
             <div id="about" class="about">
             <center>
                 <h1><b>Hello I am Ponnparamaguru,</b></h1>
@@ -39,13 +40,15 @@
         </section>
         <section class="footer-2">
         <center>
-            <h1>Feel Free to   </h1> <br>
+            <h1><b>Feel Free to Ask</b></h1> <br>
             <div id="contact" class="form">
+                <form name="myForm" action="form.html" onsubmit="return validateForm()" method="post">
+
                 <label class="form-txt" for="fname">Name : </label>
                 <input type="text" id="fname" name="firstname" placeholder="Name"><br><br>
 
-                <label class="form-txt" for="lname">E-mail : </label>
-                <input type="text" id="lname" name="lastname" placeholder="E-mail ID"><br><br>
+                <label class="form-txt" for="email">E-mail : </label>
+                <input type="text" id="email" name="email" placeholder="E-mail ID"><br><br>
 
                 <label class="form-txt" for="country">Country : </label>
                 <select id="country" name="country" style="width:175px;">
@@ -55,18 +58,18 @@
                 </select><br><br>
 
                 <label class="form-txt" for="subject">Subject : </label>
-
+                
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width:250px"></textarea><br><br>
 
-                <input type="submit" class="submit" value="Submit"><br><br>
-    
+                <a href="form.html"><input type="submit" class="submit" value="Submit"></a><br><br>
+                </form>
             </div>
         
             <div class="social-media">
-            <i class="ico fa-brands fa-instagram fa-2x"></i>
-            <i class="ico fa-brands fa-twitter fa-2x" ></i>
-            <i class="ico fa-brands fa-github fa-2x"></i>
-            <i class="ico fa-brands fa-linkedin-in fa-2x"></i>
+            <a href="https://instagram.com/ponnparamaguru_/"><i class="ico fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://twitter.com/Ponnparamaguru"><i class="ico fa-brands fa-twitter fa-2x" ></i></a>
+            <a href="https://github.com/ponnparamaguru"><i class="ico fa-brands fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/ponnparamaguru-chandrasekar-a5847b1a7"><i class="ico fa-brands fa-linkedin-in fa-2x"></i></a>
             </div>
         </center>
         </section>
